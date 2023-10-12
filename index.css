@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    margin-bottom: 10px;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(108deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    border: 1px solid rgb(23, 23, 23);
+}
+
+input,
+textarea {
+    width: 100%;
+    background-color: transparent;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid rgb(23, 23, 23);
+    border-radius: 5px;
+}
+input::placeholder,
+textarea::placeholder{
+    color: #333;
+}
+label{
+    text-align: left;
+    font-size: 15px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+textarea {
+    height: 60px;
+    resize: none;
+}
+
+.container button {
+    width: 20%;
+}
+
+.container i{
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.container button {
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    color: #333;
+    transition: all 0.1s ease-in-out;
+}
+
+.container button:hover {
+    background-color: rgb(23, 23, 23);
+    color: white;
+    border-color: white;
+}
